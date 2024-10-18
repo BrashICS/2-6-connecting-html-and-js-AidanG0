@@ -14,9 +14,34 @@
 }
 
 
+
+
+if document.getElementById("roll.die").textContent = 1 {
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDzeZVnTCMupgqBE94QaMK8KWqMQs8kV5mg&s";
+}
+
 <span id="die">🎲</span>
             <button id="d6">Roll a D6</button>
             <button id="d8">Roll a D8</button>
 
             if (value = 1) {
-                document.getElementById("").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDzeZVnTCMupgqBE94QaMK8KWqMQs8kV5mg&s";
+              document.getElementById("1").style.display = "inline";
+            }
+              
+            
+
+            type="text/javascript">
+            var picData = [
+            ['1','1.jpg'],
+            ['2','2.jpg'],
+            ['3','3.jpg']
+            ];
+            window.onload=function(){
+            var die_roll = '1';  //substitute your code to get the cookie value for this line
+            for(i=0; i < picData.length; i++){
+            if(die_roll == picData[i][0]) {
+            document.getElementById('1').src = picData[i][1];
+            i=picData.length;
+            }
+            }
+            }
